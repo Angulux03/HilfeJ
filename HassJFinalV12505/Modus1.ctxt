@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Modus1
+comment0.text=\r\n\ Computerspieler\ nach\ Modus\ 1\r\n\ Zuf\u00E4lliges\ freies\ Feld\ w\u00E4hlen\r\n\r\n\ @Tom\ Stegemann\r\n\ @V1\ 1505\r\n
+comment1.params=
+comment1.target=Modus1()
+comment1.text=\r\n\ Konstruktor\r\n
+comment2.params=spielfeld
+comment2.target=int\ eingabeDesComputers1(java.util.HashMap)
+comment2.text=\r\n\ Eingabe\ Computer\ nach\ Modus\ 1\r\n
+numComments=3

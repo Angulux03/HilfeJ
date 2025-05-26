@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Spielerin
+comment0.text=\r\n\ Eingabe\ der\ Spielerin\ \r\n\r\n\ @xxx\r\n\ @V1\ 1505\r\n
+comment1.params=spielfeldAusgabe
+comment1.target=Spielerin(SpielfeldAusgabe)
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Spielerin\r\n
+comment2.params=
+comment2.target=int\ eingabeSpielerin()
+comment2.text=\r\n\ Eingabe\ der\ Spielerin\r\n
+numComments=3

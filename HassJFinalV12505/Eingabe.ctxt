@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Eingabe
+comment0.text=\r\n\ Pr\u00FCfung\ der\ Eingabe\ der\ Spielerin\r\n\r\n\ @Johannes\ Spencker\r\n\ @V1\ 1505\r\n
+comment1.params=
+comment1.target=Eingabe()
+comment1.text=\r\n\ Konstruktor\ for\ Eingabe\r\n
+comment2.params=
+comment2.target=void\ hilfetextAnzeigen()
+comment2.text=\r\n\ \ Ausgabe\ des\ Hilfetextes\r\n
+comment3.params=
+comment3.target=int\ rundenEingabepruefung()
+comment3.text=\r\n\ Pr\u00FCfung\ ob\ die\ Anzahl\ der\ Runden\ korrekt\ angegeben\ wurde\r\n
+comment4.params=
+comment4.target=int\ modusEingabepruefung()
+comment4.text=\r\n\ Pr\u00FCfung\ ob\ der\ Modus\ richtig\ eingegeben\ wurde\r\n
+comment5.params=eingabe
+comment5.target=boolean\ feldEingabepruefung(java.lang.String)
+comment5.text=\r\n\ Pr\u00FCfung\ ob\ das\ Feld\ richtig\ ausgew\u00E4hlt\ wurde\r\n
+numComments=6

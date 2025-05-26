@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Settings
+comment0.text=\r\n\ Einstellungen\ f\u00FCr\ das\ Spiel\ \r\n\ Stellt\ runden\ und\ Modus\ ein\ \r\n\ (int\ rundenAnzahl,\ int\ modus)\r\n\r\n\ @Johannes\ Spencker\r\n\ @V1\ 1505\r\n
+comment1.params=eingabe
+comment1.target=Settings(Eingabe)
+comment1.text=\r\n\ Konstruktor\ for\ Settings\r\n
+comment2.params=
+comment2.target=int\ setRunden()
+comment2.text=\r\n\ Setter\ Runden\ \r\n
+comment3.params=
+comment3.target=int\ getRunden()
+comment4.params=
+comment4.target=int\ setModus()
+comment4.text=\r\n\ Setter\ Modus\ \r\n
+comment5.params=
+comment5.target=int\ getModus()
+numComments=6

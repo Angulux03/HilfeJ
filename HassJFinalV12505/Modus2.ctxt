@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Modus2
+comment0.text=\r\n\ Computerspieler\ nach\ Modus\ 2\r\n\ Der\ COmputer\ vefolgt\ eine\ Strategie\ in\ dem\ er\ nach\ Priorit\u00E4ten\ Folgende\ \r\n\ m\u00F6glichkeiten\ \u00FCberpr\u00FCft\ und\ ausf\u00FChrt\r\n\ 1.\ Gewinnen\ wenn\ m\u00F6glich\ \r\n\ 2.\ Sieg\ des\ Spielers\ verhindern\r\n\ 3.\ Mitte\ (B2\ /\ 5)\ besetzen\ \r\n\ 4.\ In\ die\ Ecke\ setzen\r\n\r\n\ @Tom\ Stegemann\r\n\ @V3\ 2505\r\n
+comment1.params=
+comment1.target=Modus2()
+comment1.text=\r\n\ Konstruktor\r\n
+comment2.params=spielfeld
+comment2.target=int\ eingabeDesComputers2(java.util.HashMap)
+comment2.text=\r\n\ Eingabe\ des\ Computers\ nach\ Modus\ 2\r\n
+comment3.params=spielfeld
+comment3.target=int\ eingabeDesComputers2Abwehr(java.util.HashMap)
+comment3.text=\r\n\ \u00DCberpr\u00FCfung\ von\ "2.\ Sieg\ des\ Spielers\ verhindern".\r\n
+comment4.params=spielfeld
+comment4.target=int\ eingabeDesComputers2Angriff(java.util.HashMap)
+comment4.text=\r\n\ \u00DCberpr\u00FCfung\ von\ "1.\ Gewinnen\ wenn\ m\u00F6glich\ ".\r\n
+numComments=5

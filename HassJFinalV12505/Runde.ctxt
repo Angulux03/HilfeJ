@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Runde
+comment0.text=\r\n\ Durchf\u00FChren\ einer\ Runde\r\n\r\n\ @Philip\ Hoppe\ /\ Tom\ Stegemann\r\n\ @V2\ 1605\r\n
+comment1.params=spiel
+comment1.target=Runde(Spiel)
+comment1.text=\r\n\ Konstruktor\r\n
+comment2.params=
+comment2.target=java.util.HashMap\ getSpielfeld()
+comment3.params=
+comment3.target=void\ starteRunde1()
+comment3.text=\r\n\ Runde\ nach\ Modus\ 1\r\n
+comment4.params=
+comment4.target=void\ starteRunde2()
+comment4.text=\r\n\ Runde\ nach\ Modus\ 2\r\n
+comment5.params=
+comment5.target=void\ runde2()
+comment6.params=
+comment6.target=void\ runde1()
+comment7.params=spielfeld\ spieler
+comment7.target=boolean\ rundeAuswerten(java.util.HashMap,\ int)
+comment7.text=\r\n\ Pr\u00FCfung\ ob\ jemand\ gewonnen\ hat\ und\r\n\ Auswertung\ des\ Rundengewinners\ \r\n
+numComments=8
