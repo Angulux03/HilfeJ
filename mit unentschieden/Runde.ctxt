@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Runde
+comment0.text=\r\n\ Durchf\u00FChren\ einer\ Runde\r\n\ \r\n\ @author\ Philip\r\n\ @version\ V3\ 2025\r\n
+comment1.params=computer
+comment1.target=Runde(Computer)
+comment2.params=
+comment2.target=int\ starteRunde()
+comment3.params=
+comment3.target=void\ vorbereiten()
+comment4.params=
+comment4.target=boolean\ spielerinnenZug()
+comment5.params=
+comment5.target=boolean\ computerZug()
+comment6.params=
+comment6.target=void\ wechsleBeginner()
+comment7.params=spieler
+comment7.target=boolean\ rundeAuswerten(int)
+numComments=8
