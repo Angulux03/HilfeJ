@@ -27,4 +27,9 @@ public class Main
         // put your code here
         spiel.spiel();
     }
+
+    public static void main(String[] args) {
+        Main main = new Main();
+        main.Start();
+    }
 }

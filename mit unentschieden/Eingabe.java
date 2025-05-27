@@ -15,7 +15,7 @@ public class Eingabe {
     /**
      *  Ausgabe des Hilfetextes
      */
-    public void hilfetextAnzeigen() {
+    public void hilfetextAnzeigen() { // Welche Java Version nutzt ihr? Falls ihr Java 11 oder höher nutzt, könnt ihr auch Textblöcke verwenden
     System.out.println("##############################################################################################\n" + 
                        "Spielziel:\n" + 
                        "Tic Tac Toe ist ein einfaches Strategiespiel für zwei Spieler.\n" +
@@ -57,7 +57,7 @@ public class Eingabe {
     /**
      * Prüfung ob die Anzahl der Runden korrekt angegeben wurde
      */
-     public int rundenEingabepruefung() {
+     public int rundenEingabepruefung() { // warum machst du aus ü ue?
         while (true) {
             System.out.print("Wie viele Runden sollen gespielt werden? ");
             String eingabe = scanner.nextLine();
@@ -71,9 +71,9 @@ public class Eingabe {
             } else {
                 try {
                     int zahl = Integer.parseInt(eingabe);
-                    if (zahl > 0) return zahl;
+                    if (zahl > 0) return zahl; 
                     else System.out.println("Bitte eine positive Zahl eingeben.");
-                } catch (Exception e) {
+                } catch (Exception e) { // Warum catchst du Exception? Besser NumberFormatException
                     System.out.println("Ungültige Eingabe. Bitte eine gültige Zahl eingeben.");
                 }
             }
@@ -112,21 +112,21 @@ public class Eingabe {
     public boolean feldEingabepruefung(String eingabe) {
         return eingabe.equalsIgnoreCase("A1") || eingabe.equalsIgnoreCase("A2") || eingabe.equalsIgnoreCase("A3") ||
                eingabe.equalsIgnoreCase("B1") || eingabe.equalsIgnoreCase("B2") || eingabe.equalsIgnoreCase("B3") ||
-               eingabe.equalsIgnoreCase("C1") || eingabe.equalsIgnoreCase("C2") || eingabe.equalsIgnoreCase("C3");
+               eingabe.equalsIgnoreCase("C1") || eingabe.equalsIgnoreCase("C2") || eingabe.equalsIgnoreCase("C3"); // du könntest es kürzen mit eingabe.matches("(?i)[ABC][123]") oder nem ArrayList<String> für die Feldbezeichner und das mit ner schleife erstellen
     }
 
     /**
      * Prüft ob Eingabe als Hilfe erkannt wird
      */
     private boolean istHilfe(String text) {
-        return text.equalsIgnoreCase("hilfe") || text.equals("?") || text.equalsIgnoreCase("help");
+        return text.equalsIgnoreCase("hilfe") || text.equals("?") || text.equalsIgnoreCase("help"); // du könntest es kürzen mit text.matches("(?i)hilfe|\\?|help") oder nem ArrayList<String> für die Hilfewörter 
     }
 
     /**
      * Prüft ob Eingabe als Spielende erkannt wird
      */
     private boolean istEnde(String text) {
-        return text.equalsIgnoreCase("ende") || text.equalsIgnoreCase("end");
+        return text.equalsIgnoreCase("ende") || text.equalsIgnoreCase("end"); // wie oben
     }
 
     /**

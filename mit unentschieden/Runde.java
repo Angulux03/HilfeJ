@@ -22,7 +22,7 @@ public class Runde {
     }
 
     public int starteRunde() {
-    vorbereiten();
+    vorbereiten(); // wrong indentation
 
     while (true) {
         if (beginner == 1) {

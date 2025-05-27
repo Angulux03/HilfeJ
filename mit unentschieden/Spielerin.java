@@ -15,11 +15,11 @@ public class Spielerin
      */
     public Spielerin(SpielfeldAusgabe spielfeldAusgabe)
     {
-        eingabe = new Eingabe();
+        eingabe = new Eingabe(); // Zieh this. durch in allen settern und gettern und konstruktorn, auch wenn nicht nötig
         this.spielfeldAusgabe = spielfeldAusgabe;
     }
 
-    public int gueltigeEingabe(HashMap<Integer, Integer> spielfeld) {
+    public int gueltigeEingabe(HashMap<Integer, Integer> spielfeld) { // wrong indentation
     int feld;
     while (true) {
         feld = eingabeSpielerin(); // bestehende Methode ruft den Scanner auf
@@ -42,7 +42,7 @@ public class Spielerin
             String eingabeString = eingabe.getScanner().nextLine();
             //Hilfe anzeigen
             if (eingabeString.equals("hilfe") || eingabeString.equals("Hilfe") || eingabeString.equals("HILFE") ||
-                eingabeString.equals("help") || eingabeString.equals("Help") || eingabeString.equals("HELP") ||
+                eingabeString.equals("help") || eingabeString.equals("Help") || eingabeString.equals("HELP") || // Du hast du methoden dafür in eingabe? mach diese doch static und nutze sie hier wieder
                 eingabeString.equals("?")){
                     eingabe.hilfetextAnzeigen();
                     System.out.println("Weiter gehts!");
@@ -50,13 +50,13 @@ public class Spielerin
             }
             
             // Spiel beenden
-            else if(eingabeString.equals("ende") || eingabeString.equals("Ende") || eingabeString.equals("ENDE") ||
+            else if(eingabeString.equals("ende") || eingabeString.equals("Ende") || eingabeString.equals("ENDE") || // Du hast du methoden dafür in eingabe? mach diese doch static und nutze sie hier wieder
                     eingabeString.equals("end") || eingabeString.equals("END")) {
                         System.out.println("Spiel wird beendet.");
                         System.exit(0);
                     }
             // Gültiges Feld prüfen und zurückgeben
-            else if (eingabe.feldEingabepruefung(eingabeString)) {
+            else if (eingabe.feldEingabepruefung(eingabeString)) { // erstell eine Methode zum Prüfen, da du diesen Code mehrfach nutzt
                 if (eingabeString.equals("A1") || eingabeString.equals("a1")) {
                     return 1;
                 }
@@ -93,7 +93,7 @@ public class Spielerin
                 System.out.println("Ihre Eingabe entpricht nicht der erwarteten Eingabe. \n \n" +
                 "Bitte geben sie ein Feld mit dem Großen Anfangsbuchstaben (Zeile) und der Zahl (Spalte) ein. \n \n" +
                 "Beispiel Feld in Zeile A und Spalte 1 --> Eingabe: A1\n \n"+
-                "Bei weiteren Fragen, geben sie Hilfe ein");
+                "Bei weiteren Fragen, geben sie Hilfe ein"); // mach besseres error reporting, damit die Spielerin weiß, was sie falsch gemacht hat
                 }
             // Wiederholte Eingabe
         }

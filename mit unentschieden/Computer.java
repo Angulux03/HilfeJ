@@ -9,10 +9,12 @@ import java.util.Random;
  */
 public class Computer {
     private int modus;
+
+    // Mach das aus Zeile 20 hier hin und dann final, da es sich nicht ändert
     private int[][] gewinnMoeglichkeiten;
 
     public Computer(int modus) {
-        this.modus = modus;
+        this.modus = modus; // falls ihr schon enums verwendet, nutzt hier ein Enum 
 
         // Gewinnkombinationen für Modus 2
         gewinnMoeglichkeiten = new int[][] {
@@ -27,11 +29,11 @@ public class Computer {
             return zufallsZug(spielfeld);
         } else {
             return strategieZug(spielfeld);
-        }
+        } // falls ihr inline ifs verwendet kennt nutzt es
     }
 
     private int zufallsZug(HashMap<Integer, Integer> spielfeld) {
-        ArrayList<Integer> freieFelder = new ArrayList<>();
+        ArrayList<Integer> freieFelder = new ArrayList<>(); // du könntest eine Feldklasse erstellen, die das Spielfeld kapselt
         for (int feld = 1; feld <= 9; feld++) {
             if (!spielfeld.containsKey(feld)) {
                 freieFelder.add(feld);
@@ -60,7 +62,7 @@ public class Computer {
 
         // 4. Ecken und Rest
         int[] bevorzugt = {1, 3, 7, 9, 2, 4, 6, 8};
-        for (int pos : bevorzugt) {
+        for (int pos : bevorzugt) { // wenn du überall lange variablen verwendest, dann auch für pos
             if (spielfeld.getOrDefault(pos, 0) == 0) return pos;
         }
 
@@ -76,7 +78,7 @@ public class Computer {
                 return b;
             if (spielfeld.getOrDefault(b, 0) == spieler && spielfeld.getOrDefault(c, 0) == spieler && spielfeld.getOrDefault(a, 0) == 0)
                 return a;
-        }
+        } // use if else, variables for repetition
         return 0;
     }
 }

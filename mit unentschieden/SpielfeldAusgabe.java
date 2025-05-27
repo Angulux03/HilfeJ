@@ -3,7 +3,7 @@ import java.util.HashMap;
  * Gibt das Spielfeld in der Console aus
  *
  * @xxx
- * @V1 1505
+ * @V1 1505 // was ist V1 1505? Ist das eine Versionsnummer oder ein Datum?
  */
 public class SpielfeldAusgabe
 {
@@ -42,7 +42,7 @@ public class SpielfeldAusgabe
     /**
      * Aktuelles Spielfeld Ausgeben
      */
-    public void ausgabeSpielfeld(){
+    public void ausgabeSpielfeld(){ // du kannst hier schelifen und arrays nutzen, um den Code zu kürzen
         String a1 = " ";
         if(spielfeld.getOrDefault((1),0) == 1) {
             a1 = "X";

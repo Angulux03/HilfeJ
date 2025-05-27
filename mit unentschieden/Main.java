@@ -14,7 +14,7 @@ public class Main
     {
         // initialise instance variables
         spiel = new Spiel();
-    }
+    } // warum nicht static void main(String[] args) { und dann Start() aufrufen?
 
     /**
      * An example of a method - replace this comment with your own

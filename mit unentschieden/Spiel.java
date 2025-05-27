@@ -18,15 +18,15 @@ public class Spiel {
 
     public Spiel() {
         this.eingabe = new Eingabe();
-        this.punkteSpieler = 0;
-        this.punkteComputer = 0;
-        this.aktuelleRunde = 0;
+        this.punkteSpieler = 0; // wenn du hier nichts übergibst, musst du nicht es auf 0 setzen (int sind default 0 oder setzte sie bei der deklaration auf 0)
+        this.punkteComputer = 0; // wenn du hier nichts übergibst, musst du nicht es auf 0 setzen (int sind default 0 oder setzte sie bei der deklaration auf 0)
+        this.aktuelleRunde = 0; // wenn du hier nichts übergibst, musst du nicht es auf 0 setzen (int sind default 0 oder setzte sie bei der deklaration auf 0)
     }
 
-    public void spiel() {
+    public void spiel() { // schlechter Methode Name, da sie wie die Klasse heißt, nenne sie besser starteSpiel()
         System.out.println("Willkommen bei Tic Tac Toe!");
 
-        this.runden = eingabe.rundenEingabepruefung();
+        this.runden = eingabe.rundenEingabepruefung(); 
         if (runden == -1) runden = defaultRunden;
 
         this.modus = eingabe.modusEingabepruefung();
@@ -39,14 +39,14 @@ public class Spiel {
             int gewinner = runde.starteRunde();
 
             if (gewinner == 1) {
-                punktFuerSpieler();
+                punktFuerSpieler(); // brauchst du dafür wirklich eine Methode? du kannst auch direkt punkteSpieler++ schreiben
             } else if (gewinner == 2) {
-                punktFuerComputer();
+                punktFuerComputer(); // brauchst du dafür wirklich eine Methode? du kannst auch direkt punkteComputer++ schreiben
             } else if (gewinner == 0) {
                 System.out.println("Dieses Spiel endet unentschieden.");
             }
             else {
-                System.out.println("Fehler");
+                System.out.println("Fehler"); // sollte ja nie passieren, falls ja dann programm beenden
             }
             aktuelleRunde++;
         }
