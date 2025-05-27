@@ -1,12 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
-/**
- * Beschreiben Sie hier die Klasse Computer.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
+
 public class Computer {
     private int modus;
     private int[][] gewinnMoeglichkeiten;
