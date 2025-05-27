@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Computer
+comment0.text=\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Computer.\n\ \n\ @author\ (Ihr\ Name)\ \n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\n
+comment1.params=modus
+comment1.target=Computer(int)
+comment2.params=spielfeld
+comment2.target=int\ eingabeDesComputers(java.util.HashMap)
+comment3.params=spielfeld
+comment3.target=int\ zufallsZug(java.util.HashMap)
+comment4.params=spielfeld
+comment4.target=int\ strategieZug(java.util.HashMap)
+comment5.params=spielfeld\ spieler
+comment5.target=int\ findeZug(java.util.HashMap,\ int)
+numComments=6
